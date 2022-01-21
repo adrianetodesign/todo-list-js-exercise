@@ -1,6 +1,6 @@
 // Create a new task by adding to the arrays
 // A new task will be created as incomplete
-function newTask(title, description) {
+const newTask = function(title, description) {
   const task = {
     title: title,
     description: description,
@@ -13,7 +13,7 @@ function newTask(title, description) {
       // Mark a task as complete by setting the task's status in the `taskComplete` array to `true`
       this.complete = true;
     }
-  }
+  };
   return task;
 };
 
